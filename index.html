@@ -10,39 +10,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body id="mainbody">
     <div class="container">
-        <div class="header">
-            <div class="icon-container">
-                <img src="./assets/imgs/icon.svg" alt="" class="bar-icon" width="60">
+        <div class="header" id="header">
+            <div class="logo">
+                <img class="logo-img" src="./assets/imgs/icon.svg" alt="">
+                <span class="logo-nome">Mia & Late</span>
             </div>
-            <div class="name-icon">Mia & Late</div>
-            <div class="menu">
-                <a href="" class="menu-item">Home</a>
-                <a href="" class="menu-item">Sobre Nós</a>
-                <a href="" class="menu-item">Adote</a>
-                <a href="" class="menu-item">Cuidados</a>
-                <a href="" class="menu-item">Contato</a>
+            <div class="menu-bar">
+                <div class="menu-content" id="menu-content">
+                    <a href="#body1" class="menu-item">Home</a>
+                    <a href="#body2" class="menu-item">Sobre Nós</a>
+                    <a href="" class="menu-item">Adote</a>
+                    <a href="" class="menu-item">Cuidados</a>
+                    <a href="" class="menu-item">Contato</a>
+                </div>
             </div>
         </div>
-        <div class="body-data">
-            <div class="side-text">
-                <p class="main-text">"Você não pode comprar amor, mas você pode adotar ele"</p>
-            </div>
-    
-            <div class="rounded-bc">
-                
-                <img class="bc" src="./assets/imgs/bc.svg" alt="" > 
-                <img class="dog" src="./assets/imgs/dog.png" alt="">
-            </div>
+        <div class="body-content body1" id="body1">
+            <div class="left-text"></div>
+            <div class="dog-img"></div>
+        </div>
+        <div class="body-content body2" id="body2">
         </div>
     </div>
-
 </body>
 <script src="index.js"></script>
 </html>
