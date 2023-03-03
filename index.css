@@ -1,0 +1,96 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #EAEEEF;
+    background-color: #00A6C7;
+}
+.header{
+    width: 100VW;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    position: absolute;
+
+}
+.bar-icon{
+    color:none;
+}
+.icon-container{
+    height: 5rem;
+    width: 5rem;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+}
+.name-icon{
+    font-size: 30px;
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 1000;
+    color: white;
+    background-color: none;
+}
+.menu{
+    position: absolute;
+    right: 20px;
+}
+.menu-item{
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 0 5px 0;
+    margin: 0 6px 0 6px;
+    font-size: 20px;
+
+}
+.menu-item:hover{
+    color: #4F6C77;
+    border-bottom: 2px solid #4F6C77;
+}
+.side-text{
+    position: absolute;
+    font-size: 60px;
+    z-index: 200;
+    height: 100vh;
+    width: 60vw;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side-text > .main-text{
+    background-color: none;
+    width: 100%;
+    padding: 0 100px 100px 100px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.rounded-bc{
+}
+
+.body-data{
+    position: absolute;
+    right: 0;
+    top:0;
+    left: 0;
+    bottom: 0;
+}
+.rounded-bc > .bc{
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+.rounded-bc > .dog{
+    height: 100vh;
+    position:absolute;
+    right: 0;
+
+}
