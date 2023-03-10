@@ -1,14 +1,32 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {scrollObserver()};
 
-function myFunction() {
-  //console.log(window.scrollY)
-  if(1*(window.scrollY/971) < 0.5){
-    document.getElementById("header").style.backgroundColor = `rgba(0,0,0, ${1*(window.scrollY/971)})`
-    document.getElementById("menu-content").style.visibility = "hidden"
+function scrollObserver() {
+  //var w = window.innerWidth;
+  //var h = window.innerHeight;
+  console.log(window.innerHeight/window.scrollY)
+  if(window.innerHeight/window.scrollY < 2) {
+    document.getElementById("main_video").classList.add("fade_tag_video");
+    document.getElementById("main_video").classList.remove("fade_out_tag_video");
   }else{
-    document.getElementById("menu-content").style.visibility = "visible"
-}
+    
+    document.getElementById("main_video").classList.add("fade_out_tag_video");
+    document.getElementById("main_video").classList.remove("fade_tag_video");
+  }
 
   //.style.opacity = 1*(window.scrollY/971);
   //971
 }
+
+let currentView = 1
+document.getElementById("buttonArea").addEventListener(
+  "click", ()=>{
+    document.getElementById("buttonArea").classList.toggle("go_rotate");
+    document.getElementById("buttonArea").classList.toggle("back_rotate");
+    if(currentView){
+      document.getElementById("body2").scrollIntoView({behavior: 'smooth'}, true);
+    }else{
+      document.getElementById("body1").scrollIntoView({behavior: 'smooth'}, true);
+    }
+    currentView = !currentView
+  }
+)
