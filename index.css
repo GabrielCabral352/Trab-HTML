@@ -7,7 +7,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    overflow: hidden;
+    overflow:hidden;
 }
 .header{
     background-color: rgba(0, 0, 0, 0);
@@ -17,7 +17,7 @@ body{
     top: 0;
     display: flex;
     flex-direction: row;
-
+    z-index: 200;
 }
 
 .logo{
@@ -118,7 +118,7 @@ body{
     border-radius: 100%;
     border: 5px solid;
     border-color: white;
-    position: fixed;
+    position: absolute;
     z-index: 300;
     display: flex;
     justify-content: center;
@@ -150,6 +150,16 @@ body{
 .fade_out_tag_video{
     animation: fade-out 1.5s forwards;
 }
+
+
+.body3{
+    background-color: black;
+    position: absolute;
+    top:0;
+    left: 100vw;
+}
+
+
 @keyframes fade-in {
     0% {
         margin-bottom: -100px;

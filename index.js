@@ -26,6 +26,7 @@ document.getElementById("home_redrirect").addEventListener(
       console.log(1)
       document.getElementById("buttonArea").classList.toggle("go_rotate");
       document.getElementById("buttonArea").classList.toggle("back_rotate");
+      document.getElementById("buttonArea").style.top = "90vh"
       currentView = !currentView
     }
     
@@ -38,9 +39,12 @@ document.getElementById("buttonArea").addEventListener(
     document.getElementById("buttonArea").classList.toggle("back_rotate");
     if(currentView){
       document.getElementById("body2").scrollIntoView({behavior: 'smooth'}, true);
+      document.getElementById("buttonArea").style.top = "calc(200vh - 60px)"
     }else{
       document.getElementById("body1").scrollIntoView({behavior: 'smooth'}, true);
+      document.getElementById("buttonArea").style.top = "calc(100vh - 60px)"
     }
+    
     currentView = !currentView
   }
 )
