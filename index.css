@@ -198,3 +198,103 @@ body{
         transform: rotate(360deg);
     }
 }
+
+#body3{
+    background-color:#00A6C7;
+    width: 100vw;
+    height: 100vh;
+    display: flex;flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    color: #fff;
+    font-family: 'Ubuntu';
+}
+
+.texto{
+    width: 40vw;
+    height: 30vh;  
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    
+}
+#txtprotecao{
+    width: 30vw;
+}
+
+.imgabout{
+    width: 40vw;
+    height: 60vh;
+    border-radius: 27% 73% 15% 85% / 49% 55% 45% 51%;
+    background-image: url('./assets/imgs/ong.png');
+    background-repeat: no-repeat;
+    background-position:  right bottom;  
+}
+
+.btn-saibamais {
+    display: flex;
+}
+   
+.btn-saibamais a {
+    text-decoration: none;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s; 
+    color: #000;
+}
+
+.modal__content{
+ width: 30vw;
+ height: 35vh;
+ background:  #FFC98A;
+ border-radius: 3px;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+}
+   
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn-close{
+    width: 100%;
+    height: 30px;
+    border-radius:3px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.close-modal{
+    text-decoration: none;
+    background-color: firebrick;
+    color: #fff;
+    width: 20px;
+    margin: 5px;
+    justify-content: center;
+    display: flex;
+}
+
