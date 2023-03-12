@@ -1,5 +1,13 @@
 window.onscroll = function() {scrollObserver()};
 
+
+
+var x = document.getElementById("dog_bark");
+
+function playAudio() {
+  x.play();
+}
+
 function scrollObserver() {
   //var w = window.innerWidth;
   //var h = window.innerHeight;
@@ -40,9 +48,12 @@ document.getElementById("buttonArea").addEventListener(
     if(currentView){
       document.getElementById("body2").scrollIntoView({behavior: 'smooth'}, true);
       document.getElementById("buttonArea").style.top = "calc(200vh - 60px)"
+      document.getElementById("header").style.visibility = "hidden"
+      
     }else{
       document.getElementById("body1").scrollIntoView({behavior: 'smooth'}, true);
       document.getElementById("buttonArea").style.top = "calc(100vh - 60px)"
+      document.getElementById("header").style.visibility = "visible"
     }
     
     currentView = !currentView
