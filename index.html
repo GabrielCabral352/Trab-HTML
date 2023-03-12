@@ -28,13 +28,15 @@
                     <a href="#body1" id="home_redrirect"class="menu-item">Home</a>
                     <a href="#body3" class="menu-item">Sobre Nós</a>
                     <a href="#body4" class="menu-item">Adote</a>
-                    <a href="" class="menu-item">Cuidados</a>
-                    <a href="" class="menu-item">Contato</a>
+                    <a href="#body6" class="menu-item">Cuidados</a>
+                    <a href="#body5" class="menu-item">Contato</a>
                 </div>
             </div>
         </div>
+
+
         <div class="body-content body1" id="body1">
-            <div class="left-text"></div>
+            <div class="left-text">"Ao adotar um animal, que muitas vezes foi maltratado ou abandonado, você está dando ao pet um recomeço e uma oportunidade para ele ser amado. Muitas pessoas não percebem, mas os pets também têm sentimentos assim como nós, seres humanos. Eles sentem dor, tristeza, solidão e alegria. Assim, adotá-los é um ato de amor."</div>
             <div class="dog-img"></div>
         </div>
         <div class="body-content body2" id="body2">
@@ -46,11 +48,11 @@
                 <p id="txtprotecao">A proteção animal mia&late realiza este trabalho desde 2018, onde eles resgatam
                     animais em estado de rua ou maus tratos e cuidam deles.  Realizando feiras de
                     adoção para estes animais conseguirem um lar</p>
+                <br>    
                 <br>
                 <br>
                 <br>
-                <br>
-                <h2>FEIRA DE ADOÇÃO</h2>  
+                <h1>FEIRA DE ADOÇÃO</h2>  
                 <p>Sabado das 10h30 as 13h</p>
                 <br>
 
@@ -85,8 +87,8 @@
                 <h1>Adoçao é um ato de amor, adote com responsabilidade</h1>
                 <br>
                 <br>
-                <h3>Requisitos Necessarios para adotar</h3>
-                <ol>
+                <h3>Requisitos Necessarios para adotar:</h3>
+                <ol> 
                     <li>Residir em um local que possua espaço</li>
                     <li>Possuir condiçoes financeiras</li>
                     <li>Ter mais de 18 anos</li>
@@ -105,6 +107,51 @@
                 </div>
             </section>
         </div>
+
+        <div class="body-content body5" id="body5" >
+            
+            <div class="formContainer">
+                <h1>Duvidas? Deixe uma mensagem</h1>
+            <form
+            action="https://formspree.io/f/xeqwzkbb"
+            method="POST"
+            class="main-form"
+            >
+            <label>
+            Seu email:
+            </label>
+            <input type="email" name="email">
+            
+            <label>
+            Sua mensagem:
+            </label>
+            <textarea name="message"></textarea>
+            
+           
+            <div class="btnholder">
+                <button type="submit">Enviar</button>
+            </div>
+            </form>
+            </div>
+                        
+            
+                
+            
+            
+            
+            
+            <img class="caramelo" src="./assets/imgs/caramelo.png" alt="" onclick="playAudio()">
+            
+            <audio  id="dog_bark" controls>
+                <source src="./assets/audio/latido.mp3" type="audio/mp3">
+                </audio>
+
+                
+        </div>
+        <div class="body-content body6" id="body6" >
+            
+                
+        </div>        
     </div>
 </body>
 <script src="index.js"></script>
