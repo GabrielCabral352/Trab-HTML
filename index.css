@@ -504,13 +504,68 @@ body{
     z-index: 20;
 }
 
-
-
 .body6{
-    background-color: black;
+    background-color: rgb(241, 205, 205);
     position: absolute;
     top: 0;
     left: 300vw;
-    
+    font-family: "Ubuntu";
 }
 
+.video-cuidados{
+    background-color: #00A6C7;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal_care{
+    width: 55vw;
+    height: 40vh;
+    background:  #FFC98A;
+    border-radius: 3px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.vacina{
+    background-color: #0492ae;
+    display: flex;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+#imgvacina{
+    width:50px;
+    height:50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #4286f4;
+    color: #fff;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
