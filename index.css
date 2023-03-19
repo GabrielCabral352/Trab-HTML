@@ -8,7 +8,7 @@ html {
 }
 body{
     overflow:hidden;
-    /* background-color:#00A6C7; */
+    background-color:#00A6C7;
 }
 .header{
     background-color: rgba(0, 0, 0, 0);
@@ -505,22 +505,30 @@ body{
 }
 
 .body6{
-    background-color: rgb(241, 205, 205);
+    background-color: #00A6C7;
     position: absolute;
     top: 0;
     left: 300vw;
     font-family: "Ubuntu";
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .video-cuidados{
     background-color: #00A6C7;
-    width: 100vw;
-    height: 100vh;
+    width: 80vw;
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
+    margin-top: 3vh;
 
+}
+.video-cuidados > video{
+    outline: 0;
+    width: 100%;
 }
 
 .modal_care{
@@ -539,6 +547,7 @@ body{
     display: flex;
     border-radius: 100%;
     padding: 3px;
+
 }
 
 #imgvacina{
@@ -568,4 +577,37 @@ tr:nth-child(odd) {
 }
 tr:hover {
     background-color: #ddd;
+}
+.body7{
+    position: absolute;
+    left: 200vw;
+    top: 100vh;
+    background-color: #00A6C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.body7 > iframe{
+    width: 60vw;
+    height: 70vh;
+    margin-top: -13px;
+}
+
+.redirect_insta{
+    position: absolute;
+    left: 10px;
+    bottom:10px;
+}
+.linker{
+
+}
+.linker > img{
+    width: 80px;
+
+}
+
+.btnholder:hover{
+    cursor:url(./assets/imgs/paw_curosr.png), auto;
+    background-color: red;
 }
