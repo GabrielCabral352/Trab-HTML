@@ -450,6 +450,7 @@ body{
     color: white;
     font-family: "Ubuntu";
     font-size: 20px;
+    
 
     
 }
@@ -607,7 +608,7 @@ tr:hover {
 
 }
 
-.btnholder:hover{
-    cursor:url(./assets/imgs/paw_curosr.png), auto;
-    background-color: red;
+.main-form > .btnholder > button:hover{
+    cursor: url('./assets/imgs/paw_curosr_small.png'), auto;
+
 }
