@@ -612,3 +612,67 @@ tr:hover {
     cursor: url('./assets/imgs/paw_curosr_small.png'), auto;
 
 }
+
+.body8{
+    background-color: #00A6C7;
+    position: absolute;
+    top: 0;
+    left: 300vw;
+    font-family: "Ubuntu";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    width: 5%;
+}
+
+.redirect_forms{
+    position: absolute;
+    left: 100px;
+    bottom:10px;
+}
+
+.forms{
+    width: 50%;
+    height: 80%;
+    background-color: #1494ae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #fff;
+
+}
+
+.forms form > h1{
+    top:0; 
+    margin: 15px; 
+    align-items: center;
+}
+
+.field{
+    width: 70%;
+    height: 25px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+form{
+    /* background-color: pink; */
+    width: auto;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    left: 100vw;
+}
+
+.btnForm{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 80px;
+    right: 0;
+}
+
