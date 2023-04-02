@@ -232,7 +232,7 @@ body{
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    
+    margin-top: -200px;
 }
 
 .texto > h1{
@@ -284,8 +284,8 @@ body{
 }
 
 .modal__content{
- width: 30vw;
- height: 35vh;
+ width: 35vw;
+ height: 40vh;
  background:  #FFC98A;
  border-radius: 3px;
  align-items: center;
@@ -349,7 +349,7 @@ body{
     padding: 100px 200px 100px 0;
     width: 60vw;
     height: 50vh;
-    left: 100px;
+    left: 10px;
     border-radius: 49% 51% 64% 36% / 30% 43% 57% 70% ;
     background-color: #00A6C7;
     margin-right: 30px;
@@ -359,6 +359,7 @@ body{
     align-items: center;
     position: absolute;
     z-index: 20;
+
 }
 
 .formulario > h1{
@@ -518,13 +519,13 @@ body{
 
 .video-cuidados{
     background-color: #00A6C7;
-    width: 80vw;
-    height: 70vh;
+    width: 70vw;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    margin-top: 3vh;
+    margin-top: 8vh;
 
 }
 .video-cuidados > video{
@@ -605,6 +606,7 @@ tr:hover {
 }
 .linker > img{
     width: 80px;
+    height: 55px;;
 
 }
 
@@ -622,11 +624,8 @@ tr:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
 
-#form{
-    width: 5%;
-}
 
 .redirect_forms{
     position: absolute;
@@ -634,45 +633,44 @@ tr:hover {
     bottom:10px;
 }
 
-.forms{
+.form_adt{
+    width: auto;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    left: 100vw;
+} 
+
+.forms_adote{
     width: 50%;
-    height: 80%;
-    background-color: #1494ae;
+    height: 70%;
+    background-color: #1494ae ;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
     color: #fff;
 
-}
+} 
 
-.forms form > h1{
-    top:0; 
-    margin: 15px; 
-    align-items: center;
+.form_adt > label{
+    font-size: 18px;
 }
 
 .field{
-    width: 70%;
-    height: 25px;
+    width: 88%;
+    height: 20%;
     border-radius: 4px;
     margin: 10px;
 }
 
-form{
-    /* background-color: pink; */
-    width: auto;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    left: 100vw;
-}
-
 .btnForm{
     width: 100px;
-    height: 30px;
+    height: 60px;
     border-radius: 10px;
     margin-top: 80px;
-    right: 0;
-}
+} 
 
+.gif{
+    height: 100%;
+}
