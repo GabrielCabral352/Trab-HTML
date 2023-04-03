@@ -342,7 +342,6 @@ body{
     position: absolute;
     top: 0;
     left: 200vw;
-    
 }
 
 .formulario{
@@ -589,10 +588,18 @@ tr:hover {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    z-index: -1;
+    padding-top: 5dvh;
+
+}
+
+.body7:target{
+    z-index: 10;
 }
 .body7 > iframe{
     width: 60vw;
-    height: 60vh;
+    height: 80vh;
+    
     margin-top: -13px;
 }
 
@@ -615,16 +622,24 @@ tr:hover {
 
 }
 
+
+
 .body8{
     background-color: #00A6C7;
     position: absolute;
-    top: 0;
-    left: 300vw;
+    top: 100vh;
+    left: 200vw;
     font-family: "Ubuntu";
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+    z-index: -1;
+}
+
+.body8:target{
+    z-index: 10;
+}
+
 
 
 .redirect_forms{
@@ -634,7 +649,7 @@ tr:hover {
 }
 
 .form_adt{
-    width: auto;
+    width: 60%;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -642,7 +657,7 @@ tr:hover {
 } 
 
 .forms_adote{
-    width: 50%;
+    width: 80%;
     height: 70%;
     background-color: #1494ae ;
     display: flex;
@@ -658,10 +673,12 @@ tr:hover {
 }
 
 .field{
-    width: 88%;
-    height: 20%;
+    width: 100%;
+    height: 80px;
     border-radius: 4px;
     margin: 10px;
+    outline: 0;
+    font-size: 19px;
 }
 
 .btnForm{
@@ -672,5 +689,5 @@ tr:hover {
 } 
 
 .gif{
-    height: 100%;
+   width: 30%;
 }
